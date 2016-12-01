@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="uft-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Attack On Potatoes</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	$('img').click(function(){
+		$(this).slideUp('fast');
+	});
+});
+
+$(document).ready(function(){
+	$('p').click(function(){
+		$(this).fadeOut('fast');
+	});
+});
+
+$(document).ready(function(){
+	$('h4').click(function(){
+		$(this).slideUp();
+	});
+});
+	
+</script>
+
+
+<style type="text/css">
+	*{
+		margin: 0;
+	}
+
+	header{
+		background-color: rgb(50, 50, 50);
+		width: 100%;
+		height: 75px;
+	}
+
+	nav{
+		float: right;
+		padding: 16px 20px 10px 10px;
+	}
+
+	nav ul li{
+		display: inline-block;
+		font-size: 15px;
+		padding: 10px;
+		font-family: arial;
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		color: white;
+	}
+
+	nav ul li a:hover{
+		color: white;
+	}
+
+	img{
+		width: 390px;
+		height: auto;
+		border: 3px solid brown;
+		border-radius: 5px;
+	}
+
+	p{
+		font-family: Arial;
+		font-size: 12px;
+		padding: 5px 5px 5px 5px;
+	}
+
+	article{
+		padding: 5px 15px 5px 5px;
+		float: left;
+	}
+
+	h4{
+		border-top: 2px solid brown;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 5px;
+		text-align: center;
+		background-color: rgb(70, 70, 70);
+		height: 3%;
+		position: fixed;
+	}
+
+	#menu-icon{
+		display: hidden;
+		width: 40px;
+		height: 40px;
+		background: url(img/nav.png) center;
+	}
+
+	a:hover#menu-icon{
+		border-radius: 4px 4px 0 0;
+	}
+
+	#sidebar{
+	float: right;
+	width: 230px;
+	height: 400px;
+	margin: 15px 10px;
+	padding: 5px;
+	border: 2px solid brown;
+	border-radius: 5px;
+	}
+
+	@media screen and (max-width: 760px){
+
+		*{
+			margin: 0;
+		}
+
+		#menu-icon{
+			display: inline-block;
+		}
+
+		nav ul, nav:active ul{
+			z-index: 1000;
+			display: none;
+			position: absolute;
+			padding: 10px;
+			background: grey;
+			right: 25px;
+			top: 30px;
+			border: 2px solid #F0F0F0;
+			border-radius: 10px;
+			width: 33%;
+			opacity: 0.9;
+		}
+
+		nav:hover ul{
+			display: block;
+		}
+
+		nav li{
+			text-align: center;
+			width: 45%;
+			padding: 10px 0;
+		}
+
+		nav ul{
+			text-align: center;
+			padding: 15px 0px;
+		}
+
+		h4{
+		border-top: 2px solid brown;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 10px;
+		text-align: center;
+		background-color: rgb(70, 70, 70);
+		height: 3%;
+		position: fixed;
+		}
+
+		#sidebar{
+		float: right;
+		width: 250px;
+		height: 400px;
+		margin: 15px 10px;
+		padding: 5px;
+		border: 2px solid brown;
+		border-radius: 5px;
+		}
+
+</style>
+
+
+<body>
+
+<header>
+	<div>
+		<nav>
+		<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Potato</a></li>
+				<li><a href="#">Salads</a></li>
+				<li><a href="#">Other Stuff</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div>
+	<article>
+		<img src="http://www.potatoes.com/files/5713/4202/4172/07.jpg">
+	</article>
+</div>
+
+	<div id="sidebar">
+				
+	</div>
+
+<div>
+	<p>The humble <b>potato</b> is a starchy, tuberous crop originally from the perennial nightshade Solanum tuberosum. The word "potato" might refer either to the plant itself or to the edible tuber that you pull from the ground. In the <em>Andes</em>, where the species is originally from, there are a number of closely related cultivated "potato" species. Potatoes were introduced outside the Andes region approximately four centuries ago, and have since become an integral part of much of the world's food supply. It is the world's fourth-largest food crop, following maize, wheat, and rice. The green leaves and green skins of tubers exposed to the light are toxic.</p>
+
+	<p>Wild potato species can be found throughout the Americas from the United States to southern Chile. The potato was originally believed to have been domesticated independently in multiple locations, but later genetic testing of the wide variety of cultivars and wild species proved a single origin for potatoes in the area of present-day southern Peru and extreme northwestern Bolivia (from a species in the Solanum brevicaule complex), where they were domesticated approximately 7,000 - 10,000 years ago. Following centuries of selective breeding, there are now over a thousand different types of potatoes. Over 99% of the presently cultivated potatoes worldwide descended from varieties that originated in the lowlands of south-central Chile, which have displaced formerly popular varieties from the Andes.</p>
+
+	<p>However, the local importance of the potato is variable and changing rapidly. It remains an essential crop in Europe (especially eastern and central Europe), where per capita production is still the highest in the world, but the most rapid expansion over the past few decades has occurred in southern and eastern Asia. As of 2007 China led the world in potato production, and nearly a third of the world's potatoes were harvested in China and India.</p>
+</div>
+
+<footer>
+	<h4>Potatoes</h4>
+</footer>
+
+</body>
+</html>
