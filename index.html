@@ -1,222 +1,241 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-	<meta charset="uft-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="uft-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Kingdom Hearts 2.8</title>
+	<title>Attack On Potatoes</title>
 
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
 	
 </head>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- add 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4283290450223475"
+     data-ad-slot="3900000540"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
 <script>
 
-/*--------SCRIPT START---------*/
+$(document).ready(function(){
+	$('img').click(function(){
+		$(this).slideUp('fast');
+	});
+});
 
 $(document).ready(function(){
-    $('p').click(function(){
-        $(this).fadeOut("fast");
-    });
+	$('p').click(function(){
+		$(this).fadeOut('fast');
+	});
 });
 
 $(document).ready(function(){
 	$('h4').click(function(){
-		$(this).slideUp("slow");
-	});
-});
-
-$(document).ready(function(){
-	$('article').click(function(){
 		$(this).slideUp();
 	});
 });
-
-
-/*-------SCRIPT END-----------*/
-
+	
 </script>
 
+
 <style type="text/css">
-@import "https://fonts.googleapis.com/css?family=Alegreya+Sans";
-
-*{
-	margin: 0;
-}
-
-body{
-	background-color: #F8F8F8;
-}
-
-header{
-	background-color: #3498DB;
-	width: 100%;
-	height: 75px;
-}
-
-nav{
-	float: right;
-	padding: 15px 10px 0 0;;
-}
-
-nav ul li{
-	padding: 9px;
-	display: inline-block;
-	font-size: 20px;
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #F5F5F5;
-}
-
-nav ul li a:hover{
-	color: #99CCFF;
-}
-
-img {
-	width: 370px;
-	height: auto;
-	border: 2px solid #99CCFF;
-	border-radius: 10px 10px 10px 10px;
-}
-
-article{
-	float: left;
-	margin:0 0 8px 8px;
-	padding: 22px 19px 0 0;
-}
-
-p{
-	padding: 22px 10px 10px 10px;
-	font-size: 14.5px;
-	font-family: arial;
-}
-
-#menu-icon{
-	display: hidden;
-	width: 40px;
-	height: 40px;
-	background: url(http://vignette3.wikia.nocookie.net/kingdomhearts/images/a/a8/Unbirths.png/revision/latest?cb=20100623174827) center;
-	background-size: 35px;
-}
-
-a:hover#menu-icon{
-	border-radius: 4px 4px 0 0;
-}
-
-
-h4{
-	padding: 10px;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	text-align: center;
-	border-radius: 1px;
-	box-shadow:0 0 0 2px;
-	background-color: #E0E0E0;
-	position: fixed;
-}
-
-/*---------MENU ICON AND OTHER STUFF--------*/
-
-@media screen and (max-width: 800px){
-
 	*{
-	margin: 0;
+		margin: 0;
 	}
 
-	#menu-icon{
-		display: inline-block;
-	}
-
-	nav ul,nav:active ul{
-		display: none;
-		z-index: 1000;
-		position: absolute;
-		padding: 10px;
-		background: rgb(65, 170, 190);
-		right: 25px;
-		top: 30px;
-		border: 2px solid #F0F0F0;
-		border-radius: 8px 0 8px 8px;
-		width: 40%;
-		opacity: 0.98;
-	}
-
-	nav:hover ul{
-		display: block;
-	}
-
-	nav li{
-		text-align: center;
+	header{
+		background-color: rgb(50, 50, 50);
 		width: 100%;
-		padding: 10px 0;
+		height: 75px;
 	}
 
-	p{
-		padding: auto;
-		font-size: 14.5px;
+	nav{
+		float: right;
+		padding: 16px 20px 10px 10px;
+	}
+
+	nav ul li{
+		display: inline-block;
+		font-size: 15px;
+		padding: 10px;
 		font-family: arial;
 	}
 
+	nav ul li a{
+		text-decoration: none;
+		color: white;
+	}
+
+	nav ul li a:hover{
+		color: white;
+	}
+
+	img{
+		width: 390px;
+		height: auto;
+		border: 3px solid brown;
+		border-radius: 5px;
+	}
+
+	p{
+		font-family: Arial;
+		font-size: 12px;
+		padding: 5px 5px 5px 5px;
+	}
+
+	article{
+		padding: 5px 15px 5px 5px;
+		float: left;
+	}
+
 	h4{
-	padding: 10px;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	text-align: center;
-	border-radius: 1px;
-	box-shadow:0 0 0 2px;
-	background-color: #E0E0E0;
-	position: fixed;
-}
-	
+		border-top: 2px solid brown;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 5px;
+		text-align: center;
+		background-color: rgb(70, 70, 70);
+		height: 3%;
+		position: fixed;
+	}
 
-}
+	#menu-icon{
+		display: hidden;
+		width: 40px;
+		height: 40px;
+		background: url(img/nav.png) center;
+	}
 
-/*----end of media query------*/
+	a:hover#menu-icon{
+		border-radius: 4px 4px 0 0;
+	}
+
+	#sidebar{
+	float: right;
+	width: 230px;
+	height: 400px;
+	margin: 15px 10px;
+	padding: 5px;
+	border: 2px solid brown;
+	border-radius: 5px;
+	}
+
+	@media screen and (max-width: 760px){
+
+		*{
+			margin: 0;
+		}
+
+		#menu-icon{
+			display: inline-block;
+		}
+
+		nav ul, nav:active ul{
+			z-index: 1000;
+			display: none;
+			position: absolute;
+			padding: 10px;
+			background: grey;
+			right: 25px;
+			top: 30px;
+			border: 2px solid #F0F0F0;
+			border-radius: 10px;
+			width: 33%;
+			opacity: 0.9;
+		}
+
+		nav:hover ul{
+			display: block;
+		}
+
+		nav li{
+			text-align: center;
+			width: 45%;
+			padding: 10px 0;
+		}
+
+		nav ul{
+			text-align: center;
+			padding: 15px 0px;
+		}
+
+		h4{
+		border-top: 2px solid brown;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 10px;
+		text-align: center;
+		background-color: rgb(70, 70, 70);
+		height: 3%;
+		position: fixed;
+		}
+
+		#sidebar{
+		float: right;
+		width: 250px;
+		height: 400px;
+		margin: 15px 10px;
+		padding: 5px;
+		border: 2px solid brown;
+		border-radius: 5px;
+		}
 
 </style>
 
+
 <body>
 
-	<header>
-		<div>
-			<nav>
-				<a href="#" id="menu-icon"></a>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Keyblade Skills</a></li>
-					<li><a href="#">Aqua</a></li>
-					<li><a href="#">Our Team</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<header>
+	<div>
+		<nav>
+		<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Potato</a></li>
+				<li><a href="#">Salads</a></li>
+				<li><a href="#">Other Stuff</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 
 <div>
 	<article>
-		<img src="http://metalgearsolid5.net/wp-content/uploads/2016/11/1478255059_maxresdefault.jpg">
+		<img src="http://www.potatoes.com/files/5713/4202/4172/07.jpg">
 	</article>
 </div>
 
+	<div id="sidebar">
+				
+	</div>
+
 <div>
-<p>This is a paragraph about the game Kingdom Hearts 2.8. Most of the games in the series have been both critically acclaimed and commercially successful, As of October 2013, the Kingdom Hearts series has sold over 25 million copies worldwide.</p>
-<p> Aqua is one of the main protagonists of Kingdom Hearts Birth by Sleep. She is one of the Keyblade Wielders before Sora. Like Terra and Ventus, it's her dream to become a Keyblade Master, a dream she alone was able to accomplish from the three, this had nothing to do with the fact that she was a blue haired woman. She is rather short for a keyblade master, but thats ok, she has incredible reach when it comes to her keyblade. Anyways, The series consists of eight games across multiple video game consoles, and future titles are planned. Most of the games in the series have been both critically acclaimed and commercially successful, As of October 2013, the Kingdom Hearts series has sold over 25 million copies worldwide. A wide variety of related merchandise has been released along with the games, including soundtracks, figurines, companion books, novels and manga series.</p>
-<p>Aqua, alongside Terra, was one of Eraqus's pupils. Like Terra, Aqua also had a dream of becoming a Keyblade master.One day, a suspicious man named Master Xehanort arrived and gave Eraqus a new apprentice to work with, a boy named Ventus. Terra called out to Aqua and told her that a new apprentice had just arrived. Aqua and Terra tried to converse with Ven and asked him about why he wanted to train to become a Keyblade master. The questions troubled Ven to the point that he couldn't take the pressure. He fainted and shocked Aqua and Terra.</p>
+	<p>The humble <b>potato</b> is a starchy, tuberous crop originally from the perennial nightshade Solanum tuberosum. The word "potato" might refer either to the plant itself or to the edible tuber that you pull from the ground. In the <em>Andes</em>, where the species is originally from, there are a number of closely related cultivated "potato" species. Potatoes were introduced outside the Andes region approximately four centuries ago, and have since become an integral part of much of the world's food supply. It is the world's fourth-largest food crop, following maize, wheat, and rice. The green leaves and green skins of tubers exposed to the light are toxic.</p>
+
+	<p>Wild potato species can be found throughout the Americas from the United States to southern Chile. The potato was originally believed to have been domesticated independently in multiple locations, but later genetic testing of the wide variety of cultivars and wild species proved a single origin for potatoes in the area of present-day southern Peru and extreme northwestern Bolivia (from a species in the Solanum brevicaule complex), where they were domesticated approximately 7,000 - 10,000 years ago. Following centuries of selective breeding, there are now over a thousand different types of potatoes. Over 99% of the presently cultivated potatoes worldwide descended from varieties that originated in the lowlands of south-central Chile, which have displaced formerly popular varieties from the Andes.</p>
+
+	<p>However, the local importance of the potato is variable and changing rapidly. It remains an essential crop in Europe (especially eastern and central Europe), where per capita production is still the highest in the world, but the most rapid expansion over the past few decades has occurred in southern and eastern Asia. As of 2007 China led the world in potato production, and nearly a third of the world's potatoes were harvested in China and India.</p>
 </div>
 
 <footer>
-	<h4 style="color: #484848 ">&copy; Slyzer5's website</h4>
+	<h4>Potatoes</h4>
 </footer>
 
 </body>
