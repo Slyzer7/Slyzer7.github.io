@@ -1,244 +1,274 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="uft-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Attack On Potatoes</title>
+	<meta charset="uft-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<link href="css/font-awesome.min.css" rel="stylesheet"/>
-	
+	<title>Template 1</title>
+
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+
 </head>
-	
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4283290450223475",
-    enable_page_level_ads: true
-  });
-</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-
 <script>
-
 $(document).ready(function(){
-	$('img').click(function(){
-		$(this).slideUp('fast');
+	$(this).click(function(){
+		$('footer').fadeOut();
 	});
 });
-
-$(document).ready(function(){
-	$('p').click(function(){
-		$(this).fadeOut('fast');
-	});
-});
-
-$(document).ready(function(){
-	$('h4').click(function(){
-		$(this).slideUp();
-	});
-});
-	
 </script>
 
 
-<style type="text/css">
+<style>
+
 	*{
 		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #F0F0F0;
 	}
 
 	header{
-		background-color: rgb(50, 50, 50);
-		width: auto;
+		background-color: #191929;
 		height: 75px;
+		widths: auto;
 	}
 
 	nav{
 		float: right;
-		padding: 16px 20px 10px 10px;
+		padding: 15px 10px 0 0;
 	}
 
 	nav ul li{
 		display: inline-block;
-		font-size: 15px;
-		padding: 10px;
-		font-family: arial;
+		padding: 9px;
+		font-size: 20px;
 	}
 
 	nav ul li a{
 		text-decoration: none;
-		color: white;
+		color: #F5F5F5;
+		padding: 15px;
 	}
 
 	nav ul li a:hover{
-		color: white;
+		color: violet;
+		transition: all 0.3s ease 0s;
 	}
 
-	img{
-		width: 330px;
-		height: auto;
-		border: 3px solid brown;
-		border-radius: 5px;
-	}
-
-	p{
-		font-family: Arial;
-		font-size: 12px;
-		padding: 5px 5px 5px 5px;
-	}
-
-	article{
-		padding: 5px 15px 5px 5px;
-		float: left;
-	}
-
-	h4{
-		border-top: 2px solid brown;
-		right: 0;
-		left: 0;
-		bottom: 0;
+	#sidebar{
+		height: 530px;
+		width: 200px;
+		border: 3px solid #191929;
+		border-radius: 6px;
+		float: right;
 		padding: 5px;
-		text-align: center;
-		background-color: rgb(70, 70, 70);
-		height: 3%;
-		position: fixed;
+		margin: 4px 15px 12px;
+	}
+
+	#sidebar2{
+		height: auto;
+		width: 98.5%;
+		border: 3px solid #191929;
+		border-radius: 6px;
+		padding: 0;
+		margin: 8px 8px;
+	}
+
+	.russia{
+		padding: 20px;
+		font-family: arial;
+		font-size: 15px;
 	}
 
 	#menu-icon{
 		display: hidden;
 		width: 40px;
 		height: 40px;
-		background: url(http://vignette2.wikia.nocookie.net/elderscrolls/images/c/c2/Potato.png/revision/latest?cb=20120907202038) center;
-		background-size: 40px;
+		background: url(http://vignette3.wikia.nocookie.net/kingdomhearts/images/a/a8/Unbirths.png/revision/latest?cb=20100623174827) center;
+		background-size: 37px;
 	}
 
-	a:hover#menu-icon{
-		border-radius: 4px 4px 0 0;
+	footer{
+		background: #191929;
+		opacity: 0.9;
+		width: 100%;
+		margin-top: 5%;
+		padding: 1% 0;
+		overflow: auto;
+		color: #fff;
 	}
 
-	#sidebar{
-	float: right;
-	width: 200px;
-	height: 360px;
-	margin: 15px 10px;
-	padding: 5px;
-	border: 3px solid brown;
-	border-radius: 5px;
-	background-color: blue;
+	footer p{
+		color: #fff;
+		text-align: center;
 	}
+
+	.new ul li{
+		list-style-type: none;
+		padding: 5px;
+		font-size: 17px;
+		font-family: arial;
+	}
+
+	.new ul li a{
+		text-decoration: none;
+		color: #191929;
+	}
+
+	.new ul li a:hover{
+		color: violet;
+		transition: all 0.3s ease 0s;
+	}
+
+
+/*----PARALLAX SECTION START-----*/
+	.parallax-1{
+		background: url("http://wallpaperstock.net/stars-night-snow-forest-house-wallpapers_42514_1920x1080.jpg") repeat fixed 100%;
+		text-align: center;
+	}
+
+	.parallax-inner{
+		padding: 55px;
+		font-family: arial;
+	}
+
+	.parallax-inner h3, .parallax-inner p {
+		color: #F0F0F0;
+	}
+/*-----END PARALLAX SECTION----*/
 
 	@media screen and (max-width: 760px){
 
-		*{
-			margin: 0;
-		}
+	*{
+		margin: 0;
+	}
 
-		#menu-icon{
-			display: inline-block;
-		}
+	#menu-icon{
+		display: inline-block;
+	}
 
-		nav ul, nav:active ul{
-			z-index: 1000;
-			display: none;
-			position: absolute;
-			padding: 10px;
-			background: grey;
-			right: 25px;
-			top: 30px;
-			border: 2px solid #F0F0F0;
-			border-radius: 10px;
-			width: 33%;
-			opacity: 0.9;
-		}
-
-		nav:hover ul{
-			display: block;
-		}
-
-		nav li{
-			text-align: center;
-			width: 45%;
-			padding: 10px 0;
-		}
-
-		nav ul{
-			text-align: center;
-			padding: 15px 0px;
-		}
-
-		h4{
-		border-top: 2px solid brown;
-		right: 0;
-		left: 0;
-		bottom: 0;
+	nav ul,nav:active ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
 		padding: 10px;
-		text-align: center;
-		background-color: rgb(70, 70, 70);
-		height: 3%;
-		position: fixed;
-		}
+		background: #191929;
+		right: 25px;
+		top: 30px;
+		border: 2px solid #F0F0F0;
+		border-radius: 8px 8px 8px 8px;
+		width: 45%;
+		opacity: 0.92;
+	}
 
-		#sidebar{
+	nav:hover ul{
+		display: block;
+	}
+
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	nav li a {
+		text-align: center;
+		display: inline-block;
+	}
+
+	#sidebar{
+		height: 530px;
+		width: 231px;
+		border: 3px solid #191929;
+		border-radius: 6px;
 		float: right;
-		width: 200px;
-		height: 360px;
-		margin: 15px 10px;
 		padding: 5px;
-		border: 3px solid brown;
-		border-radius: 5px;
-		background-color: blue;
-		}
+		margin: 4px 15px;
+	}
+
+	#sidebar2{
+		height: auto;
+		width: 95.5%;
+		border: 3px solid #191929;
+		border-radius: 6px;
+		padding: 0;
+		margin: 8px 8px;
+	}
+
+	.new ul li{
+		list-style-type: none;
+		padding: 5px;
+		font-size: 17px;
+		text-align: center;
+	}
+
+}
 
 </style>
-
 
 <body>
 
 <header>
 	<div>
 		<nav>
-		<a href="#" id="menu-icon"></a>
+			<a href="#" id="menu-icon"></a>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contacts</a></li>
-				<li><a href="#">Potato</a></li>
-				<li><a href="https://en.wikipedia.org/wiki/Salad">Salads</a></li>
-				<li><a href="http://attackontitan.wikia.com/wiki/Sasha_Blouse">Other Stuff</a></li>
+				<li><a href="#home">Home</a><a href="#about">About</a><a href="#service">Service</a><a href="#reviews">Reviews</a><a href="contact">Contacts</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
 
-<div>
-	<article>
-		<img src="http://www.potatoes.com/files/5713/4202/4172/07.jpg">
-	</article>
+
+<!--PARALLAX SECTION START-->
+<div id="sidebar2">
+
+<section class="parallax-1">
+	<div class="parallax-inner">
+		<h3>History of Russia</h3>
+		<p>One of the greatest country on the planet, even though it has a few issues.</p>
+	</div>
+</section>
+
+</div>
+<!--PARALLAX SECTION END-->
+
+
+<div id="sidebar">
+	<section class="new">
+			<ul>
+				<li><a href="#">Russia</a></li>
+				<li><a href="#">Crimea</a></li>
+				<li><a href="#">Soviet Union</a></li>
+				<li><a href="#">Fall of The USSR</a></li>
+				<li><a href="#">Cold War</a></li>
+			</ul>
+	</section>
 </div>
 
-	<div id="sidebar">
 
-	</div>
+<div class="russia">
+	<p>The Russian economy ranks as the twelfth largest by nominal GDP and sixth largest by purchasing power parity in 2015. Russia's extensive mineral and energy resources are the largest such reserves in the world, making it one of the leading producers of oil and natural gas globally. The country is one of the five recognized nuclear weapons states and possesses the largest stockpile of weapons of mass destruction.</p>
 
-<div>
-	<p>The humble <b>potato</b> is a starchy, tuberous crop originally from the perennial nightshade Solanum tuberosum. The word "potato" might refer either to the plant itself or to the edible tuber that you pull from the ground. In the <em>Andes</em>, where the species is originally from, there are a number of closely related cultivated "potato(not potAto)" species. Potatoes were introduced outside the Andes region approximately four centuries ago, and have since become an integral part of much of the world's food supply. It is the world's fourth-largest food crop, following maize, wheat, and rice. The green leaves and green skins of tubers exposed to the light are toxic.</p>
+	<br>
 
-	<p>Wild potato species can be found throughout the Americas from the United States to southern Chile. The potato was originally believed to have been domesticated independently in multiple locations, but later genetic testing of the wide variety of cultivars and wild species proved a single origin for potatoes in the area of present-day southern Peru and extreme northwestern Bolivia (from a species in the Solanum brevicaule complex), where they were domesticated approximately 7,000 - 10,000 years ago. Following centuries of selective breeding, there are now over a thousand different types of potatoes. Over 99% of the presently cultivated potatoes worldwide descended from varieties that originated in the lowlands of south-central Chile, which have displaced formerly popular varieties from the Andes.</p>
+	<p>Following the Russian Revolution, the Russian Soviet Federative Socialist Republic became the largest and leading constituent of the Union of Soviet Socialist Republics, the world's first constitutionally socialist state. The Soviet Union played a decisive role in the Allied victory in World War II, and emerged as a recognized superpower and rival to the United States during the Cold War. </p>
 
-	<p>That being said, the importance of the mighty potato is somewhat variable and changing rapidly. It remains an essential crop in Europe (and Mars), where per capita production is still the highest in this world(and agiain, Mars), but the most rapid expansion over the past few decades has occurred in southern and eastern Asia(and for the final time, Mars). As of 2007 China led the world in potato production, and nearly a third of the world's potatoes were harvested in China and India.</p>
+	<br>
+
+	<p>The Soviet era saw some of the most significant technological achievements of the 20th century, including the world's first human-made satellite and the launching of the first humans in space. By the end of 1990, the Soviet Union had the world's second largest economy, largest standing military in the world and the largest stockpile of weapons of mass destruction. Following the partition of the Soviet Union in 1991, fourteen independent republics emerged from the USSR; as the largest, most populous, and most economically developed republic, the Russian SFSR reconstituted itself as the Russian Federation and is recognized as the continuing legal personality and sole successor state of the Soviet Union.</p>
 </div>
-	
-	<div>
-		<h2>Website Under Construction</h2>
-	</div>
 
 <footer>
-	<h4>Potatoes</h4>
+	<p>&copy; Template 1 </p>
 </footer>
+
 
 </body>
 </html>
