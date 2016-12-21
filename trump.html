@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="uft-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>History of Russia</title>
+	
+	<meta name="description" content="A small website that offers a quick history of Russia">
+	<meta name="keywords" content="Donald, Trump, god emperor trump, Donald Trump, History of Russia, history of Donald Trump, historyofrussia, historyofrussia.net, starter website, Russian Federation">
+
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-89166858-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-4283290450223475",
+	    enable_page_level_ads: true
+	  });
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+    var $sidebar   = $("#sidebar"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});
+</script>
+
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color: #E6E6FA;
+	}
+	header{
+		background-color: #191929;
+		height: 75px;
+		widths: auto;
+	}
+	nav{
+		float: right;
+		padding: 15px 10px 0 0;
+	}
+	nav ul li{
+		display: inline-block;
+		padding: 9px;
+		font-size: 20px;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #F5F5F5;
+		padding: 15px;
+	}
+	nav ul li a:hover{
+		color: violet;
+		transition: all 0.3s ease 0s;
+	}
+	#sidebar{
+		height: 100px;
+		width: 120px;
+		border: 3.3px solid #0A0A0A;
+		background-color: #191929;
+		border-radius: 6px;
+		float: right;
+		padding: 18px;
+		margin: 4px 15px 12px;
+		opacity: 0.97;
+	}
+	#sidebar2{
+		height: auto;
+		width: auto;
+		border-bottom: 3.3px solid #191929;
+		padding: 0;
+		margin: 0px 0px 5px 0px;
+	}
+	.russia{
+		padding: 20px;
+		font-family: arial;
+		font-size: 15px;
+		text-align: left;
+		width: 75%;
+	}
+	#menu-icon{
+		display: hidden;
+		width: 40px;
+		height: 40px;
+		background-size: 37px;
+	}
+	footer{
+		background: #191929;
+		opacity: 0.9;
+		width: 100%;
+		margin-top: 5%;
+		padding: 1% 0;
+		overflow: auto;
+		color: #fff;
+	}
+	footer p{
+		color: #fff;
+		text-align: center;
+	}
+	.new ul li{
+		list-style-type: none;
+		padding: 5px;
+		font-size: 17px;
+		font-family: arial;
+	}
+	.new ul li a{
+		text-decoration: none;
+		color: white;
+		font-family: arial;
+	}
+	.new ul li a:hover{
+		color: violet;
+		transition: all 0.3s ease 0s;
+	}
+/*----PARALLAX SECTION START-----*/
+	.parallax-1{
+		background: url("http://www.slate.com/content/dam/slate/blogs/moneybox/2015/08/16/donald_trump_on_immigration_build_border_fence_make_mexico_pay_for_it/483208412-real-estate-tycoon-donald-trump-flashes-the-thumbs-up.jpg.CROP.promo-xlarge2.jpg") repeat fixed 65%;
+	}
+	.parallax-inner{
+		padding: 55px;
+		font-family: arial;
+	}
+	.parallax-inner h2, .parallax-inner p {
+		color: #F0F0F0;
+	}
+/*-----END PARALLAX SECTION----*/
+	@media screen and (max-width: 780px){
+	*{
+		margin: 0;
+	}
+	#menu-icon{
+		display: inline-block;
+		background: black;
+		border: 1px solid grey;
+		border-radius: 5px;
+	}
+	nav ul,nav:active ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 10px;
+		background: #191929;
+		right: 25px;
+		top: 30px;
+		border: 2px solid #F0F0F0;
+		border-radius: 8px 8px 8px 8px;
+		width: 45%;
+		opacity: 0.92;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+	nav li a {
+		text-align: center;
+		display: inline-block;
+	}
+	#sidebar{
+		display: none;
+	}
+	#sidebar2{
+		height: auto;
+		width: 93%;
+		border: 3px solid #191929;
+		border-radius: 6px;
+		padding: 0;
+		margin: 8px 8px;
+	}
+	.new ul li{
+		list-style-type: none;
+		padding: 5px;
+		font-size: 17px;
+		text-align: center;
+	}
+	.russia{
+		width: 85%;
+	}
+	.parallax-1{
+		background: url("http://wallpaperstock.net/stars-night-snow-forest-house-wallpapers_42514_1920x1080.jpg") repeat fixed 100%;
+		text-align: center;
+	}
+	button{
+	color: white;
+	border: 2px solid white;
+	border-radius: 2px;
+	background-color: #191929;
+	transition: all 0.3s ease 0s;
+	}
+	button:hover{
+	background-color: violet;
+	}
+}
+</style>
+
+<a name="home">
+
+<body>
+
+<header>
+	<div>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.html">Home</a> <a href="https://www.theguardian.com/world/russia">News</a><a href="https://www.google.com/">Google</a> <a href="#ref">References</a> <a href="#">Donald Trump</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+
+<!--PARALLAX SECTION START-->
+<div id="sidebar2">
+
+<section class="parallax-1">
+	<div class="parallax-inner">
+		<h2>Donald Trump</h2>
+		<p style="font-size: 20px;">President-elect of The United States</p>
+	</div>
+</section>
+
+</div>
+<!--PARALLAX SECTION END-->
+
+
+<div id="sidebar">
+	<section class="new">
+			<ul>
+				<li><a href="#home">Donald</a></li>
+				<li><a href="#putin">Putin</a></li>
+				<li><a href="#Media">Media</a></li>
+			</ul>
+	</section>
+</div>
+
+<a name="home">
+
+<div class="russia">
+	<h3>Donald Trump</h3>
+	<p>Donald J. Trump is the president-elect of the United States of America. As of 2016, American media claim that the Russian Federation, especially President Putin himself, had a hand to play in Trumps election victory. The CIA claims that russian hackers are responsible for Hillary Clintons emails being leaked to the public, thus, costing her the election to Donald Trump. As of December 2016, the CIA has not put forth any proof to substantiate their claims.</p>
+</div>
+
+<br>
+
+
+<a name="putin">
+
+
+<div class="russia">
+	<h3>President Putin</h3>
+	<p>Valdimir Putin is the president of the Russian Federation. As of 2016, American media claim that the Russian Federation, especially President Putin himself, had a hand to play in Trumps election victory. The CIA claims that russian hackers are responsible for Hillary Clintons emails being leaked to the public, thus, costing her the election to Donald Trump. As of December 2016, the CIA has not put forth any proof to substantiate their claims.</p>
+</div>
+
+<br>
+
+
+<a name="Media">
+
+<div class="russia">
+	<h3>Media Reaction to Trump Presidency</h3>
+	<p>The Media has had an absolute meltdown over the election of Donald Trump. This is said to be because of the fact that no one in the media, save a few trump supporters, that defended his chances of victory over Clinton since the beginning of his run of president.</p>
+</div>
+
+
+<br>
+
+
+<a name="ref">
+
+<div class="russia">
+	<h4>References</h4>
+
+	<br>
+
+	<ol style="text-decoration: none; color: grey; font-family: times; text-align: left;
+		width: 75%; list-style-type: none;">
+		<li><a href="https://en.wikipedia.org/wiki/Russia<">https://en.wikipedia.org/wiki/Russia</a></li>
+		<br>
+		<li><a href="https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union">https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union</a></li>
+		<br>
+		<li><a href="https://en.wikipedia.org/wiki/Cold_War">https://en.wikipedia.org/wiki/Cold_War</a></li>
+		<br>
+		<li><a href="https://en.wikipedia.org/wiki/Crimea">https://en.wikipedia.org/wiki/Crimea</a></li>
+		<br>
+		<li><a href="https://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics">https://en.wikipedia.org/wiki/Union_of_Soviet_Socialist_Republics</a></li>
+	</ol>
+</div>
+
+
+<footer>
+	<p>&copy; Template Trump </p>
+</footer>
+
+
+</body>
+</html>
