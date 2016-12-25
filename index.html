@@ -12,6 +12,24 @@
 
 	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 
+			<script>
+			function startTime() {
+			    var today = new Date();
+			    var h = today.getHours();
+			    var m = today.getMinutes();
+			    var s = today.getSeconds();
+			    m = checkTime(m);
+			    s = checkTime(s);
+			    document.getElementById('txt').innerHTML =
+			    "Current Time: " + h + ":" + m + ":" + s;
+			    var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			    return i;
+			}
+			</script>
+
 </head>
 	
 	<script>
@@ -33,6 +51,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+
 <script>
 $(function() {
     var $sidebar   = $("#sidebar"), 
@@ -51,24 +70,7 @@ $(function() {
         }
     });
 });
-	
-function startTime(){
-	var today = new Date();
-	var h = today.getHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
-	
-	m = checkTime(m);
-	s = checkTime(s);
-	document.getElementById('txt').innerHTML = h + ":" + m + ":" s;
-	var t = setTimeout(startTime, 500);
-}
-	function checkTime(i) {
-		if (i < 10) {
-			i = "0" + i
-		};
-		return i;
-	};
+
 </script>
 
 
@@ -83,7 +85,7 @@ function startTime(){
 	header{
 		background-color: #191929;
 		height: 75px;
-		widths: auto;
+		width: auto;
 	}
 	nav{
 		float: right;
@@ -168,9 +170,18 @@ function startTime(){
 	border-radius: 2px;
 	background-color: #191929;
 	transition: all 0.3s ease 0s;
-}
+	}
 	button:hover{
 	background-color: violet;
+	}
+
+	#txt{
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #E6E6FA;
+	font-size: 20px;
+	padding: 5px;
 	}
 /*----PARALLAX SECTION START-----*/
 	.parallax-1{
@@ -260,18 +271,19 @@ function startTime(){
 
 <body onload="startTime()">
 
+
 <header>
 	<div>
 		<nav>
 			<a href="#" id="menu-icon"></a>
 			<ul>
-				<li id="txt" style="float: left;"></li>
 				<li><a href="index.html">Home</a> <a href="https://www.theguardian.com/world/russia">News</a><a href="https://www.google.com/">Google</a> <a href="#ref">References</a> <a href="trump.html">Donald Trump</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
 
+<div id="txt"></div>
 
 <!--PARALLAX SECTION START-->
 <div id="sidebar2">
