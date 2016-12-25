@@ -50,8 +50,25 @@ $(function() {
             });
         }
     });
-    
 });
+	
+function startTime(){
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	
+	m = checkTime(m);
+	s = checkTime(s);
+	document.getElementById('txt').innerHTML = h + ":" + m + ":" s;
+	var t = setTimeout(startTime, 500);
+}
+	function checkTime(i) {
+		if (i < 10) {
+			i = "0" + i
+		};
+		return i;
+	};
 </script>
 
 
@@ -241,13 +258,14 @@ $(function() {
 
 <a name="home">
 
-<body>
+<body onload="startTime()">
 
 <header>
 	<div>
 		<nav>
 			<a href="#" id="menu-icon"></a>
 			<ul>
+				<li id="txt" style="float: left;"></li>
 				<li><a href="index.html">Home</a> <a href="https://www.theguardian.com/world/russia">News</a><a href="https://www.google.com/">Google</a> <a href="#ref">References</a> <a href="trump.html">Donald Trump</a></li>
 			</ul>
 		</nav>
