@@ -4,6 +4,10 @@
 -------------------------------------------------------- */
 
 @media (max-width: 767px){
+	
+	.resp{
+		display: hidden;
+	}
 
 	.navbar-default .navbar-toggle{
 		background: none;
