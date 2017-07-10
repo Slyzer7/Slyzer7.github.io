@@ -6,7 +6,7 @@
 @media (max-width: 767px){
 	
 	.resp{
-		display: hidden;
+		display: none;
 	}
 
 	.navbar-default .navbar-toggle{
