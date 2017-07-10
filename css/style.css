@@ -25,6 +25,11 @@ TABLE OF CONTENTS
 /* -------------------------------------------------------
                      Global 
 -------------------------------------------------------- */
+
+.norm{
+	display: none;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #111;
