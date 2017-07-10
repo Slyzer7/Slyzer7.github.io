@@ -5,8 +5,13 @@
 
 @media (max-width: 767px){
 	
+	.norm{
+		display: block;
+	}
+	
+	
 	.resp{
-		display: hidden;
+		display: none;
 	}
 
 	.navbar-default .navbar-toggle{
